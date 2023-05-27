@@ -1,0 +1,12 @@
+.catalog {
+    background-color: #11009E;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.catalog .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}

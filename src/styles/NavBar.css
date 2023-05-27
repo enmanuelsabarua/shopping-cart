@@ -17,6 +17,11 @@
     font-size: 25px;
     text-decoration: none;
     color: #4942E4;
+    transition: .2s ease-in-out;
+}
+
+.link:hover {
+    transform: scale(1.1);
 }
 
 .website-title {

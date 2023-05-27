@@ -1,0 +1,30 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    flex-grow: 1;
+    margin-top: 20px;
+}
+
+.footer p {
+    padding: 20px 0;
+    font-size: 20px;
+}
+
+.white {
+    color: white;
+}
+
+.black {
+    color: black;
+}
+
+.fa-github {
+    transition: .2s ease-in-out;
+}
+
+.fa-github:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
