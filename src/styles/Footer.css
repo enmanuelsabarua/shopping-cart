@@ -19,12 +19,3 @@
 .black {
     color: black;
 }
-
-.fa-github {
-    transition: .2s ease-in-out;
-}
-
-.fa-github:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-}

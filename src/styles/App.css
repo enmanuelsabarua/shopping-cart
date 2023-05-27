@@ -14,3 +14,12 @@ html, body, #root {
     max-width: 1200px;
     margin: 0 auto;
 }
+
+.fa-brands {
+    transition: .2s ease-in-out;
+}
+
+.fa-brands:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}

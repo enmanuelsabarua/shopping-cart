@@ -11,7 +11,7 @@ function Catalog() {
           {images.map(laptop => <Product key={uniqid()} name={laptop.name} price={laptop.price} />)}
         </div>
 
-        <Footer color={'white'} />
+        <Footer color={'black'} />
       </div>
     );
   }

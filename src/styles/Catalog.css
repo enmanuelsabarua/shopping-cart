@@ -3,6 +3,10 @@
     padding-top: 80px;
     display: flex;
     flex-direction: column;
+    background-image: url('../../public/imgs/bg2.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .catalog .container {
