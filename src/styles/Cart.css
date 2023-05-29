@@ -1,0 +1,82 @@
+.black-filter {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.594);
+    height: 100%;
+    transform: translateX(-100%);
+    transition: .8s cubic-bezier(0, 0.6, 0.5, 1.01);
+}
+
+.cart {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30vw;
+    padding: 50px;
+    background-color: white;
+    height: 100%;
+    transform: translateX(100%);
+    transition: .8s cubic-bezier(0, 0.6, 0.5, 1.01);
+    transition-delay: .1s;
+}
+
+.show {
+    transform: translateX(0);
+}
+
+.cart-content {
+    position: sticky;
+    top: 50px;
+}
+
+.cart-content h2 {
+    color: black;
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center;
+}
+
+.total {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.cart-btn {
+    display: block;
+    padding: 10px 0;
+    font-size: 25px;
+    font-weight: 700;
+    width: 100%;
+    margin: 20px 0;
+    border: none;
+    transition: .3s ease;
+}
+
+.cart-btn:hover {
+    cursor: pointer;
+}
+
+.checkout-btn {
+    background-color: #11009E;
+    color: white;
+}
+
+.checkout-btn:hover {
+    background-color: #0d0082;
+}
+
+.close-btn {
+    background-color: rgb(255, 127, 127);
+}
+
+.close-btn:hover {
+    background-color: rgb(255, 89, 89);
+
+}
