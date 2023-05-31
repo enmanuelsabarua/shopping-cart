@@ -4,8 +4,6 @@ function CartProduct({ id, name, price, amount, setCartProducts, cartProducts, s
 
     function handleAmount(e) {
         const newCartProducts = cartProducts.filter(product => {
-            // Fixed reduce product cart
-
 
             if(product.id === e.target.id) {
 
@@ -16,10 +14,10 @@ function CartProduct({ id, name, price, amount, setCartProducts, cartProducts, s
                 
                 if (e.target.innerText === '+') {
                     setTotal(total + product.basePrice);
-                    return {name: product.name, amount: product.amount++, price: (product.totalPrice += product.basePrice) };
+                    return {id: product.id, name: product.name, amount: product.amount++, price: (product.totalPrice += product.basePrice) };
                 } else if (e.target.innerText === '-') {
                     setTotal(total - product.basePrice);
-                    return {name: product.name, amount: product.amount--, price: (product.totalPrice -= product.basePrice) };
+                    return {id: product.id, name: product.name, amount: product.amount--, price: (product.totalPrice -= product.basePrice) };
                 }
                 
             }

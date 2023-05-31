@@ -25,6 +25,11 @@
     transition-delay: .1s;
 }
 
+.products {
+    max-height: 50vh;
+    overflow-y: scroll;
+}
+
 .show {
     transform: translateX(0);
 }

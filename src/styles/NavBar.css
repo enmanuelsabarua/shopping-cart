@@ -36,8 +36,21 @@
     background-color: #11009E;
     padding: 17px 20px;
     border-radius: 50%;
+    position: relative;
 }
 
 .fa-cart-shopping {
     color: white;
+}
+
+.product-count {
+    position: absolute;
+    background-color: #8696FE;
+    padding: 10px 17.5px;
+    border-radius: 50%;
+    font-size: 16px;
+    bottom: -15px;
+    left: -15px;
+    color: white;
+    font-weight: 700;
 }

@@ -15,7 +15,7 @@ function App() {
       <NavBar cartProducts={cartProducts} total={total} setCartProducts={setCartProducts} setTotal={setTotal} />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/catalog' element={<Catalog setCartProducts={setCartProducts} setTotal={setTotal} total={total} />} />
+        <Route path='/catalog' element={<Catalog setCartProducts={setCartProducts} setTotal={setTotal} total={total} cartProducts={cartProducts} />} />
         <Route path='/contact' element={<Contact/>} />
       </Routes>
     </>
