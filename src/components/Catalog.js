@@ -4,11 +4,14 @@ import uniqid from 'uniqid';
 import '../styles/Catalog.css';
 import Footer from "./Footer";
 
-function Catalog() {
+function Catalog({ setCartProducts, setTotal, total }) {
     return (
       <div className="catalog">
         <div className="container">
-          {images.map(laptop => <Product key={uniqid()} name={laptop.name} price={laptop.price} />)}
+          {images.map(laptop => {
+            const id = uniqid();
+            return <Product key={id} id={id} name={laptop.name} price={laptop.price} setCartProducts={setCartProducts} setTotal={setTotal} total={total} />
+          })}
         </div>
 
         <Footer color={'black'} />

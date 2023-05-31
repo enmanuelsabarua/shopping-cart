@@ -3,7 +3,7 @@ import Cart from "./Cart";
 import '../styles/NavBar.css';
 import { useState } from "react";
 
-function NavBar() {
+function NavBar({ id, cartProducts, total, setCartProducts, setTotal }) {
     const [showCart, setShowCart] = useState(false);
 
     const handleShowCart = () => {
@@ -19,7 +19,7 @@ function NavBar() {
               <li className="link"><Link className="laptops-link link" to="/catalog">Laptops</Link></li>
               <li className="link"><Link className="contact-link link" to="/contact">Contact</Link></li>
               <li className="link cart-icon" onClick={handleShowCart}><Link className="link"><i className="fa-solid fa-cart-shopping"></i></Link></li>
-              <Cart showCart={showCart} handleShowCart={handleShowCart} />              
+              <Cart id={id} showCart={showCart} handleShowCart={handleShowCart} cartProducts={cartProducts} total={total} setTotal={setTotal} setCartProducts={setCartProducts}/>              
             </div>
         </ul>
       </nav>

@@ -4,14 +4,18 @@ import NavBar from './components/NavBar';
 import Home from './components/Home';
 import Catalog from './components/Catalog';
 import Contact from './components/Contact';
+import { useState } from 'react';
 
 function App() {
+  const [cartProducts, setCartProducts] = useState([]);
+  const [total, setTotal] = useState(0);
+
   return (
     <>
-      <NavBar />
+      <NavBar cartProducts={cartProducts} total={total} setCartProducts={setCartProducts} setTotal={setTotal} />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/catalog' element={<Catalog />} />
+        <Route path='/catalog' element={<Catalog setCartProducts={setCartProducts} setTotal={setTotal} total={total} />} />
         <Route path='/contact' element={<Contact/>} />
       </Routes>
     </>
